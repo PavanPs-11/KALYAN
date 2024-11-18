@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="{% url 'add_emp' %}">
+    {% csrf_token %}
+<h1> YOU CAN ADD THE EMPLOYEE</h1>
+    enter fname<input name="tx1" value="{{Emp_fname}}">
+enter lname<input name="last" value="{{Emp_lname}}"><br>
+enter dept<input name="dp" value="{{dept}}"><br>
+enter salary<input name="sal" value="{{salary}}"><br>
+enter bonus<input name="bns" value="{{bonus}}"><br>
+enter role<input name="rl" value="{{role}}"><br>
+enter phone<input name="ph" value="{{phone}}"><br>
+    <input type="submit">
+    </form>
+</body>
+</html>
